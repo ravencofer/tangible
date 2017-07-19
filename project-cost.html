@@ -23,8 +23,16 @@
     <div class="col">
       <h2>Project Cost</h2>
       <p class="supporting">
-        <li><label>This Label</label></li>
-        <li>Item2</li>
+        <li>
+          
+           <select name="selected-occupancy" class="selected-occupancy">
+      {% for item in site.data["1004-1-2"] %}
+      <option data-area-type = "{{item.areaType}}" data-load-factor = "{{item.occLoadFactor}}"> 
+        {{item.occTypeMain}} {{item.occTypeSub}} </option>
+      {% endfor %}
+    </select>
+          
+        </li>
       </p>
     </div>
   </div>
