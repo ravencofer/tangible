@@ -38,7 +38,7 @@
 
 
       <select name="selected-occupancy" class="selected-occupancy">
- {% for item in site.data["1004-1-2"] %}
+ {% for item in site.data["model_geo"] %}
  <option data-area-type = "{{item.areaType}}" data-load-factor = "{{item.occLoadFactor}}">
    {{item.occTypeMain}} {{item.occTypeSub}} </option>
  {% endfor %}
