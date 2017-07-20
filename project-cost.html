@@ -16,16 +16,30 @@
       </div>
     </div>
 
-<!--Add in an actual header here at some point -->
+<!-- Add in an actual header here at some point -->
 
 <div class="supporting">
   <div class="container">
-    <div class="col">
-      <h2>Project Cost</h2>
-      <p class="supporting">
-        <li><label>This Label</label></li>
-        <li>Item2</li>
-      </p>
+    <div class="main">
+      <h2>Project Cost Calculator</h2>
     </div>
   </div>
 </div>
+
+<div class="supporting">
+  <div class="container">
+    <div class="para">
+      <p class="supporting">Imported Project Geometry</p>
+    </div>
+  </div>
+</div>
+
+<label>JOB NAME: <input name="job_name"></label>
+
+
+      <select name="selected-occupancy" class="selected-occupancy">
+ {% for item in site.data["1004-1-2"] %}
+ <option data-area-type = "{{item.areaType}}" data-load-factor = "{{item.occLoadFactor}}">
+   {{item.occTypeMain}} {{item.occTypeSub}} </option>
+ {% endfor %}
+</select>

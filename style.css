@@ -40,9 +40,16 @@ html, body {
 }
 
 .main {
+  font-family: 'Raleway', sans-serif;
   position: relative;
   top: 180px;
   text-align: center;
+}
+
+.para {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  margin: 40px;
 }
 
 .main h1 {
